@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-image: url(https://media.istockphoto.com/photos/abstract-watercolor-background-hot-pink-picture-id1151411469?k=6&m=1151411469&s=170667a&w=0&h=KIclqx85pMbq-eXJAdqynFVymCe3zj7Px_xLOj-FMIs=);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  font-style: oblique;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(123, 6, 128);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(150, 150, 150);
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 100%; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2 style = "font-family:Impact, Charcoal, sans-serif;font-size:50px;font-style:italic;">
+    WomenCode
+  </h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="main.html">Home</a></li>
+      <li><a href="about.htm">Fast Facts</a></li>
+      <li><a href="why.htm">Learn to Code</a></li>
+      <li><a href="try.htm">Try to Code</a></li>
+      <li><a href="vr.htm">VR</a></li>
+      <li><a href="hackathons.htm">Resources</a></li>
+      <li><a href="game.htm">Game</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h2>Let's Learn about Different Programming Languages!</h2>
+    <h3>What is Programming</h3>
+    <p>Programming is how apps, websites, and computer software are made (just like this one). There are many types of coding, but some of the most popular ones are:</p>
+    <h3><a href="https://www.learnpython.org/">Python</a></h3>
+    <p>Python is a high - level language that is object oriented. It is typically used for back-end (behind the scenes) web development, data analysis, artificial intelligence, and scientific computing</p>
+    <h3><a href="https://www.w3schools.com/html/default.asp">HTML and CSS (this webpage)</a></h3>
+    <p>HTML is the standard markup language for web pages. It creates what you see when you arrive at a website. CSS describes how HTML elements are displayed (color, size, font, etc.)</p>
+    <h3><a href="https://www.learnjavaonline.org/">Java</a></h3>
+    <p>Java is considered the dominant language in coding. It is useful for web and app development</p>
+    <h3><a href="https://www.w3schools.com/html/default.asp">Javascript</a></h3>
+    <p>Javascript is the programming language for the web. This language makes it easy to move code from one operating system to another without modifications. </p>
+    <h3><a href="https://developer.apple.com/swift/">Swift</a></h3>
+    <p>Swift was written by Apple Inc. to be used mainly with Apple products.</p>
+    <p></p>
+    <p>*Click on the Language Names to find more information about*</p>
+  </article>
+</section>
+
+
+
+</body>
+</html>

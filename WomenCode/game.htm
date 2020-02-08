@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-image: url(https://media.istockphoto.com/photos/abstract-watercolor-background-hot-pink-picture-id1151411469?k=6&m=1151411469&s=170667a&w=0&h=KIclqx85pMbq-eXJAdqynFVymCe3zj7Px_xLOj-FMIs=);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  font-style: oblique;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(123, 6, 128);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(150, 150, 150);
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 100%; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+	background-image: url(https://i.pinimg.com/736x/41/0f/dd/410fdd1b6d0a3abbe9a47a2c5b173aca.jpg);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2 style = "font-family:Impact, Charcoal, sans-serif;font-size:50px;font-style:italic;">
+    WomenCode
+  </h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="main.html">Home</a></li>
+      <li><a href="about.htm">Fast Facts</a></li>
+      <li><a href="why.htm">Learn to Code</a></li>
+      <li><a href="try.htm">Try to Code</a></li>
+      <li><a href="vr.htm">VR</a></li>
+      <li><a href="hackathons.htm">Resources</a></li>
+      <li><a href="game.htm">Game</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Do you like playing games?</h1>
+    <p>Play this Women Empowerment Memory Game!</p>
+    <p>You'll learn about Women in STEM!</p>
+    <iframe width="400" height="655" align="middle" src="https://studio.code.org/projects/applab/OwYCjt482zMfSPisM1amHOxH5UtZeL8eqVfUKeVuNio/embed" ></iframe>
+    </article>
+</section>
+
+<footer>
+  <a href="ContactUs.htm">Contact Us</a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-image: url(https://media.istockphoto.com/photos/abstract-watercolor-background-hot-pink-picture-id1151411469?k=6&m=1151411469&s=170667a&w=0&h=KIclqx85pMbq-eXJAdqynFVymCe3zj7Px_xLOj-FMIs=);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  font-style: oblique;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(123, 6, 128);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(150, 150, 150);
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+	background-image: url(https://i.pinimg.com/736x/41/0f/dd/410fdd1b6d0a3abbe9a47a2c5b173aca.jpg);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+/*style tables*/
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2 style = "font-family:Impact, Charcoal, sans-serif;font-size:50px;font-style:italic;">
+    WomenCode
+  </h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="main.html">Home</a></li>
+      <li><a href="about.htm">Fast Facts</a></li>
+      <li><a href="why.htm">Learn to Code</a></li>
+      <li><a href="try.htm">Try to Code</a></li>
+      <li><a href="vr.htm">VR</a></li>
+      <li><a href="hackathons.htm">Resources</a></li>
+      <li><a href="game.htm">Game</a></li>
+    </ul>
+  </nav>
+  <h2>Jobs and Salaries</h2>
+
+<table>
+  <tr>
+    <th>Job</th>
+    <th>Salary</th>
+  </tr>
+  <tr>
+    <td><a href = "https://www.careerexplorer.com/careers/computer-systems-administrator/">Computer Systems Administrator</a></td>
+    <td>$81,000 - 6% growth</td>
+
+  </tr>
+  <tr>
+    <td><a href = "https://www.careerexplorer.com/careers/computer-network-architect/">Computer Network Architect</a></td>
+    <td>$104,650 - 6% growth</td>
+
+  </tr>
+  <tr>
+    <td><a href = "https://www.bls.gov/ooh/computer-and-information-technology/web-developers.htm">Web Developer</a></td>
+    <td>$67,990 - 15% growth</td>
+
+  </tr>
+  <tr>
+    <td><a href = "https://www.pluralsight.com/resource-center/guides/guide-to-becoming-a-database-admin">Database Administrator</a></td>
+    <td>$87,020 - 11% growth</td>
+
+  </tr>
+  <tr>
+    <td><a href = "https://www.bls.gov/ooh/life-physical-and-social-science/political-scientists.htm">Political Scientist</a></td>
+    <td>$117,570 - 3% growth
+</td>
+
+  </tr>
+  <tr>
+    <td><a href = "https://en.wikipedia.org/wiki/Actuary">Actuary</a></td>
+    <td>$102, 880 - 22% growth</td>
+
+  </tr>
+</table>
+  <article>
+    <p>Listed in the Table View are some jobs and their salaries. Feel free to click on the job name in order to find out more about the job!</p>
+  </article>
+
+  
+</section>
+
+<footer>
+  <a href="ContactUs.htm">Contact Us</a>
+</footer>
+
+</body>
+</html>

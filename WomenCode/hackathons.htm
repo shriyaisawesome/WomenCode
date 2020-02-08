@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-image: url(https://media.istockphoto.com/photos/abstract-watercolor-background-hot-pink-picture-id1151411469?k=6&m=1151411469&s=170667a&w=0&h=KIclqx85pMbq-eXJAdqynFVymCe3zj7Px_xLOj-FMIs=);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  font-style: oblique;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(123, 6, 128);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(150, 150, 150);
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 100%; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+	background-image: url(https://i.pinimg.com/736x/41/0f/dd/410fdd1b6d0a3abbe9a47a2c5b173aca.jpg);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2 style = "font-family:Impact, Charcoal, sans-serif;font-size:50px;font-style:italic;">
+    WomenCode
+  </h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="main.html">Home</a></li>
+      <li><a href="about.htm">Fast Facts</a></li>
+      <li><a href="why.htm">Learn to Code</a></li>
+      <li><a href="try.htm">Try to Code</a></li>
+      <li><a href="vr.htm">VR</a></li>
+      <li><a href="hackathons.htm">Resources</a></li>
+      <li><a href="game.htm">Game</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h2>Resources</h2>
+    <h4>There are many resources available to girls interested in programming. Below are a few.
+        To visit the respective web page, click the icon beside the information</h4>
+    <p>FemmeHacks is a great opportunity for girls who are interested in coding with a lot or a little experience. The hackathon is a free experience open to only women!
+        The event starts with workshops and learning and finishes with new knowledge and friends.</p>
+        <p class="center">
+            <a href="http://femmehacks.io/" target="_blank"><img src="imgs/femmehacks.png"width="180" height="150"/></a>
+        </p>
+    <p>Girls Who Code is an organization that promotes women in coding. They offer programs in all areas of computing. The group is focused on closing the gender gap in programming.</p>
+    <a href="https://girlswhocode.com/"
+    target="_blank"><img src="imgs/gwc.png"
+    width="200" height="150" /></a>
+
+    <p> She Can STEM is a site that compiles inspiring information about women in Science, Technology, Engineering, and Math. The stories of many women serve as motivation for younger girls. </p>
+    <a href="https://shecanstem.com/"
+    target="_blank"><img src="imgs/stem.png"
+    width="150" height="150" /></a>
+
+    <p>Girls Inc is a program that works with schools and organizations to inspire girls to be strong and smart. They fundraise donations to support girls' development. </p>
+    <a href="https://girlsinc.org/"
+    target="_blank"><img src="imgs/girls.png"
+    width="150" height="150" /></a>
+
+    <p>Project CS GIRLS is a nonprofit that is dedicated to closing the gender gap in technology. They host a technology and computer science competition. Their goal is to instill a passion for computer science in young girls in hopes that they will grow up loving it.</p>
+    <a href="https://www.projectcsgirls.com/"
+    target="_blank"><img src="imgs/pcsg.png"
+    width="150" height="150" /></a>
+
+    <p>National Girls Collaborative Project tries is to bring together organizations that are committed to informing and encouraging girls to pursue careers in STEM.</p>
+    <a href="https://ngcproject.org/"
+    target="_blank"><img src="imgs/ngcp.png"
+    width="150" height="150" /></a>
+
+    <p>Code Like a Girl is a compilation of articles and stories from women working in STEM. These writings are designed to give girls an idea of what the world of technology and engineering are really like.</p>
+    <a href="https://code.likeagirl.io/"
+    target="_blank"><img src="imgs/clag.png"
+    width="200" height="150" /></a>
+
+    <p>The Grace Hopper Confrence is an event where females in computer science can network within the STEM community and  with career oppotunities</p>
+    <a href="https://ghc.anitab.org/"
+    target="_blank"><img src="imgs/ghc.png"
+    width="150" height="150"/> </a>
+
+    <p>Girl Develop it is an organization to provide affordable and judgment-free opportunities for women interested in learning web and software development. Girl Develop It helps women of diverse backgrounds achieve their technology goals and build confidence.</p>
+    <a href="https://www.girldevelopit.com/"
+    target="_blank"><img src="imgs/gdi.png"
+    width="150" height="150"/> </a>
+
+    <p>Black Girls CODE is devoted to showing the world that black girls can code and so much more. They introduce computer coding lessons to young girls from underrepresented communities in Scratch and Ruby on Rails. Their ultimate goal is to provide African American youth with the skills to occupy some of the 1.4 million available computing job openings expected to be available in the U.S. by 2020 and to train 1 million girls by 2040.</p>
+    <a href="http://www.blackgirlscode.com/"
+    target="_blank"><img src="imgs/bgc.png"
+    width="250" height="150"/> </a>
+  </article>
+</section>
+
+<footer>
+  <a href="ContactUs.htm">Contact Us</a>
+</footer>
+
+</body>
+</html>
